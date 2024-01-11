@@ -102,3 +102,42 @@ a:hover
         display: none;
      }
 }
+
+footer a img 
+{
+    width: fit-content;
+    padding: 2px;
+    background-color: #60e70598;
+    border-radius: 15%;
+    margin:  auto; 
+    
+}
+
+footer a img:hover
+{
+    width: fit-content;
+    padding: 2px;
+    background-color: #60e705ff;
+    border-radius: 15%;
+    margin:  auto; 
+    
+}
+
+hr 
+{
+    color:#005d92;
+
+}
+svg 
+{
+    fill: #005d92;
+    width: 32px;
+    height: 32px;
+}
+
+svg:hover
+{
+    fill: #003b5e;
+    border-bottom: #1100ff dashed 2px;
+    
+}
