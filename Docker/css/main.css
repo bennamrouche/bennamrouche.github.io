@@ -1,58 +1,153 @@
 body 
 {
-    position:absolute;
+
     background: #fffefe;
     color  : #005d92;
-    left: 20%;
-    margin-top: 0px;
-    padding-top: 0px;
+    margin: 0px auto;
+    padding-top: 30px;
     
 }
+/*>>>>>>>>>>  header >>>>>>>>>>  */
 .sidebar h1 
 {
+    text-align: center;
     color :  #fffefe;
 }
+
+header
+{
+    display: flex;
+    width: 100%;
+    background-color:  #0b3749;
+    flex-direction: column;
+    align-items: flex-center;
+}
+
+/* .menu 
+{
+    margin: 4px;
+    padding: 10px;
+
+
+    background-color: #0b3749;
+} */
+
+.menu
+{
+    margin: 4px;
+    padding: 10px;
+    box-shadow: 2px 2px 3px coral; 
+    /* box-shadow: -2px -2px -3px red;  */
+
+    background-color: #0b3749;
+}
+
+
+
+
+.menu >  div 
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 7px;
+    margin-right:0px 10px ;
+    margin: 0px;
+    
+    font-size: 16;
+    /* background-color:coral ; */
+    margin-bottom: 10px;
+    /* border: #1749ff solid 5px; */
+
+}
+
+.sidebar
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-center;
+
+     display: block; 
+    align-items: center;
+    width: 100vw;
+    max-width: 15000px;
+    background-color:  #0b3749;
+    
+    color :  #e9e2e2;
+    width: auto;
+    overflow: auto;
+     margin:auto; 
+    text-align: center;
+    
+}
+
+.menu > a  , .menu  a 
+{
+    padding: 0px 0px;
+    margin-right: 20px;
+    
+    text-transform: capitalize;
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration:  none;
+    color: white;
+    
+}
+.menu > a:hover  , .menu  a:hover
+{
+    padding: 0px 0px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 3px coral; 
+    text-transform: capitalize;
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration:  none;
+    color: white;
+    
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> main <<<<<<<<<<<<<<*/
+
+main 
+{
+    border: #003b5e 20px solid;
+    text-align: center;
+    margin: auto;
+}
+
+section 
+{  
+    /* margin: auto; */
+}
+
+
 h1 
 {
+    /* text-align: center; */
     color : #0b3749 ;
 }
+
 h3
 {
     color : #1100ff;
 }
+
+/* >>>>>>>>>> table >>>>>>>>>>>>>>>>>>> */
 table , th , td 
 {
     border: solid 1px  #001235;
     border-collapse: collapse;
     padding: 5px;
 }
-
-
-.sidebar
+p 
 {
-    position: fixed;  
-   align-items: center;
-    top: 0;
-    left: 0;
-    background-color:  #0b3749;
-    color :  #e9e2e2;
-    width: auto;
-    height: 100%;
-    padding: 0px;
-    overflow: auto;
+    width: 100%;
     text-align: center;
-    
 }
 
 
-
-
-.sidebar > ul 
-{
-    padding-left: 0px;
-    margin: 0px;
-    text-indent: 0px;
-}
 
 a 
 {
@@ -62,23 +157,13 @@ a
         text-align: start;
         font-size: 14px;
         text-decoration:  none;
-        color: #e9e2e2;
+        color: #2a23fc;
 }
 
 a:hover
 {
     font-weight: bold;
         color: #c8d2ff;
-}
-
- li, ol 
-{
-    margin: auto;
-    list-style:none;
-    color:  red;
-     font-size: 18px;
-    text-align: left;
-    padding: 2px;
 }
 
 #section6 > h3 
@@ -88,22 +173,82 @@ a:hover
     width: fit-content;
 }
 
+
 #section6 > p 
 {
    margin: 3px;
     text-indent: 2em;
 }
 
-@media(max-width: 500px)
-{
 
-    .sidebar
-     {
-        display: none;
-     }
+/*************************            Code Component      ************************/
+.code 
+{
+    position: relative;
+    background-color: #005d92;
+    color: rgb(255, 255, 255);
+    margin: 10px  auto;
+    border-top:30px #45b7f9 solid;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+
 }
 
-footer a img 
+.keyword 
+{
+    color: #ffa300;
+    padding: 4px;
+    font-weight: bolder; 
+    margin: 0px;
+    margin-right: 15px;
+
+}
+
+.code-title
+{
+    position: absolute;
+    top: -50px;
+    padding: 5px;
+    font-size: 20px;
+    left: 10%; 
+ 
+   width: 100%;
+}
+.normal 
+{
+    
+    padding: 4px;
+    /* text-wrap: wrap; */
+    margin: 0px;
+    color: rgb(254, 237, 123);
+}
+.comment 
+{
+    color: #17ff3f;
+}
+
+
+.instruction
+{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   align-content: center;   
+   flex-wrap: wrap;
+   /* background-color: #17ff3f; */
+}
+
+.instruction > p
+ {
+    padding: 4px;
+     /* min-width: 100px; */
+    text-wrap: nowrap;
+ }
+
+/*           footer                      */
+
+ footer a img 
 {
     width: fit-content;
     padding: 2px;
