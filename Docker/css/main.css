@@ -1,63 +1,44 @@
 body 
 {
-
-    background: #fffefe;
-    color  : #005d92;
-    margin: 0px auto;
-    padding-top: 30px;
+    color  : #fffefe;
+    /* margin: 0px auto; */
+    padding: 5px 20px;
+    background-color: rgb(27, 0, 46);
     
 }
+
 /*>>>>>>>>>>  header >>>>>>>>>>  */
 .sidebar h1 
 {
     text-align: center;
-    color :  #fffefe;
+    font-size:   2.5em; ;
+    color  : #fffefe;
 }
 
-header
-{
-    display: flex;
-    width: 100%;
-    background-color:  #0b3749;
-    flex-direction: column;
-    align-items: flex-center;
-}
 
-/* .menu 
+
+.menu 
 {
-    margin: 4px;
     padding: 10px;
-
-
-    background-color: #0b3749;
-} */
-
-.menu
-{
-    margin: 4px;
+    box-shadow: 5px 5px 5px rgb(105, 117, 247);
+    border-radius: 10px;
+    background-color: #28296f;
+    margin-bottom: 10px;
+    margin: 10px;
     padding: 10px;
-    box-shadow: 2px 2px 3px coral; 
-    /* box-shadow: -2px -2px -3px red;  */
-
-    background-color: #0b3749;
+    max-width: 700px;
+    width: 80%; 
+    
 }
-
-
-
 
 .menu >  div 
 {
-    display: flex;
-    justify-content: space-around;
+
     padding: 5px;
     border-radius: 7px;
     margin-right:0px 10px ;
     margin: 0px;
-    
-    font-size: 16;
-    /* background-color:coral ; */
     margin-bottom: 10px;
-    /* border: #1749ff solid 5px; */
 
 }
 
@@ -65,61 +46,65 @@ header
 {
     display: flex;
     flex-direction: column;
-    align-items: flex-center;
-
-     display: block; 
     align-items: center;
-    width: 100vw;
-    max-width: 15000px;
-    background-color:  #0b3749;
-    
-    color :  #e9e2e2;
-    width: auto;
+    align-content: center;
+    padding: 0px;
+     width: 100%;
     overflow: auto;
-     margin:auto; 
     text-align: center;
     
 }
 
 .menu > a  , .menu  a 
 {
+    font-size: 1.5rem;
     padding: 0px 0px;
     margin-right: 20px;
-    
     text-transform: capitalize;
     text-align: start;
-    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration:  none;
-    color: white;
+    color:  #feffff;
+    font-size: 1em;
+    
     
 }
+
 .menu > a:hover  , .menu  a:hover
 {
-    padding: 0px 0px;
-    margin-right: 20px;
-    box-shadow: 2px 2px 3px coral; 
-    text-transform: capitalize;
-    text-align: start;
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration:  none;
-    color: white;
-    
+  
+    text-shadow: 2px 2px rgb(106, 0, 255);
+    text-decoration: double;
+    text-decoration: double underline coral; 
+
 }
+
 
 /* >>>>>>>>>>>>>>>>>>>>>>>> main <<<<<<<<<<<<<<*/
 
 main 
 {
-    border: #003b5e 20px solid;
     text-align: center;
     margin: auto;
 }
 
-section 
-{  
-    /* margin: auto; */
+section
+{
+    padding-top: 20px;
+} 
+
+
+
+ section  div 
+{
+    max-width: 500px;
+    margin-top: 100px;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+     background-color: #080037; 
+     border:3px   rgb(137, 167, 255) groove ;
+     box-shadow: 2px 2px 3px blue, -2px -2px 3px blue;
 }
 
 
@@ -131,20 +116,44 @@ h1
 
 h3
 {
-    color : #1100ff;
+    color : white;
 }
 
+img
+{
+    background-color: #080037; 
+    padding: 6px;
+    max-width: 350px;
+    max-height: 350px;
+    margin-top: 20px;
+    box-shadow: 4px 4px 7px  rgb(62, 0, 196) , -4px -4px 7px rgb(62, 0, 196);;
+} 
+
 /* >>>>>>>>>> table >>>>>>>>>>>>>>>>>>> */
+table 
+{
+    margin: auto;
+    background-color: brown;
+    background-color: #080037; 
+    max-width: 500px;
+  
+
+}
+
 table , th , td 
 {
-    border: solid 1px  #001235;
     border-collapse: collapse;
+    border-radius: 30deg;
+    border:3px   rgb(137, 167, 255) groove ;
     padding: 5px;
 }
+
 p 
 {
     width: 100%;
     text-align: center;
+    text-wrap: wrap;
+    line-height: 2rem;
 }
 
 
@@ -160,11 +169,6 @@ a
         color: #2a23fc;
 }
 
-a:hover
-{
-    font-weight: bold;
-        color: #c8d2ff;
-}
 
 #section6 > h3 
 {
@@ -172,26 +176,35 @@ a:hover
     margin: 0px;
     width: fit-content;
 }
+section
+{
+    border-bottom: 3px red solid;
+}
 
-
-#section6 > p 
+/* #section6 > p 
 {
    margin: 3px;
     text-indent: 2em;
-}
+} */
 
-
+/* main:nth-child(even)
+{
+    background-color: red;
+} */
 /*************************            Code Component      ************************/
+
 .code 
 {
     position: relative;
     background-color: #005d92;
+    text-align: start;
     color: rgb(255, 255, 255);
     margin: 10px  auto;
     border-top:30px #45b7f9 solid;
     border-radius: 20px;
     padding: 20px;
     max-width: 500px;
+    
 
 }
 
@@ -204,15 +217,22 @@ a:hover
     margin-right: 15px;
 
 }
-
+.instruction > p
+ {
+    display: inline;
+    padding: 4px;
+    text-wrap: nowrap;
+ }
+ 
 .code-title
 {
     position: absolute;
-    top: -50px;
+    top: -55px;
+    left: 10px;
+  
     padding: 5px;
+    text-align: start;
     font-size: 20px;
-    left: 10%; 
- 
    width: 100%;
 }
 .normal 
@@ -223,28 +243,23 @@ a:hover
     margin: 0px;
     color: rgb(254, 237, 123);
 }
+
 .comment 
 {
+    display: inline;
     color: #17ff3f;
+    text-align: start;
 }
 
 
 .instruction
 {
-   display: flex;
-   justify-content: start;
-   align-items: center;
-   align-content: center;   
-   flex-wrap: wrap;
+   display: block;
+
    /* background-color: #17ff3f; */
 }
 
-.instruction > p
- {
-    padding: 4px;
-     /* min-width: 100px; */
-    text-wrap: nowrap;
- }
+
 
 /*           footer                      */
 

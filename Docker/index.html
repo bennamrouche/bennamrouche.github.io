@@ -64,29 +64,30 @@
 				</div>
 
                 <div class="menu">
-                    <a href="#section8"> Examples</a>
+                    <a href="#section"> Examples</a>
                         
 					<div>
                             <a> Static Web Site (nginx)</A>
 				</div>
         </nav>
     </header>
+
     <main>
         <section id="section1">
-            <h1> What is Docker ? </h1>
+            <div>
+            <h2> What is Docker ? </h2>
             <p>
                 <b> Docker </b> is an open source platform
-                <br> that enables developers to build,<b> deploy</b>, <b> run </b> , <b> run </b> <b>update </b> and<b>
+               that enables developers to build,<b> deploy</b>, <b> run </b> , <b> run </b> <b>update </b> and<b>
                     manage </b>containers—standardized, executable components
-                <br> that combine application source code with the operating system <abbr title="operating system">
+               that combine application source code with the operating system <abbr title="operating system">
                     (OS)</abbr>
-                <br>libraries and dependencies required to run that code in any environment.
+              libraries and dependencies required to run that code in any environment.
             </p>
-
+        </div>
         </section>
-        <hr>
         <section id="section2">
-            <h1>Docker vs Virtual Machine </h1>
+            <h2>Docker vs Virtual Machine </h2>
             <table>
                 <thead>
                     <tr>
@@ -100,23 +101,23 @@
 
 
                     <tr>
-                        <td> What is it? <br> <br> </td>
+                        <td> What is it? </td>
                         <td>
-                            Docker is a software platform <br> to create and
-                            run Docker containers. <br> A Docker container is an
-                            emulation of a user-space instance, <br> the part of
-                            the operating system <br> where user processes run.<br><br>
+                            Docker is a software platform to create and
+                            run Docker containers. A Docker container is an
+                            emulation of a user-space instance, the part of
+                            the operating system where user processes run.<br><br>
                         </td>
                         <td>
-                            An emulation of a physical <br> machine—including
-                            virtualized hardware—running <br> an operating
+                            An emulation of a physical machine—including
+                            virtualized hardware—running an operating
                             system.
                         </td>
                     </tr>
                     <tr>
                         <td>Virtualization </td>
-                        <td>Container abstracts <br> operating system details
-                            <br> from the application code.
+                        <td>Container abstracts operating system details
+                            from the application code.
                         </td>
                         <td>
                             VM abstracts hardware details <br>
@@ -140,20 +141,20 @@
                         <td>Managed by </td>
                         <td>
                             Shares resources with
-                            <br> the underlying host kernel.
+                            the underlying host kernel.
                             <br><br>
                         </td>
-                        <td>Runs its own kernel and <br> operating system.</td>
+                        <td>Runs its own kernel and operating system.</td>
                     </tr>
                     <tr>
                         <td>Architecture</td>
                         <td>
                             Shares resources with
-                            <br> the underlying host kernel.
+                            the underlying host kernel.
                         </td>
                         <td>
                             Runs its own kernel and
-                            <br> operating system.
+                            operating system.
                             <br><br>
                         </td>
                     </tr>
@@ -165,7 +166,7 @@
                         </td>
                         <td>
                             fixed amount, set in a virtual machine <br>
-                            image’s <br> configuration requirements.
+                            image’s configuration requirements.
                             <br><br>
                         </td>
                     </tr>
@@ -182,12 +183,15 @@
             </table>
         </section>
         <section id="section3">
-            <h1>
-                Docker architecture
-            </h1>
+           
             <figure>
                 <figcaption>
-                    <pre>
+            <div>
+                <h2>
+                    Docker architecture
+                </h2>
+                    <p>
+                        
     Docker uses a client-server architecture. 
     The Docker client talks to the Docker daemon,
     which does the heavy lifting of building, running, and distributing
@@ -196,45 +200,52 @@
     and daemon communicate using a REST API, over UNIX sockets or a network interface. 
     Another Docker client is Docker Compose,
     that lets you work with applications consisting of a set of contain
-                    </pre>
+                    </p>
+            </div>
                 </figcaption>
-                <img src="./src/docker-architecture.webp" alt="docker-architecture" width="512" height="400">
+                <img src="./src/docker-architecture1.webp" alt="docker-architecture" width="512" height="400">
             </figure>
 
             <a href="https://docs.docker.com/get-started/overview/"> Source </a>
         </section>
         <section>
-            <h1 id="section4"> Docker Image And Container </h1>
+            <h2 id="section4"> Docker Image And Container </h2>
+            <div>
             <h3 id="section4-1"> What is a Docker image? </h3>
 
             <p>
                 A Docker image is a file used to execute code in a Docker container.
-                <br> Docker images act as a set of instructions to build a Docker container,
-                <br> like a template. Docker images also act as the starting point when using
-                <br> Docker. An image is comparable to a snapshot in virtual machine (VM) environments
+                Docker images act as a set of instructions to build a Docker container,
+                like a template. Docker images also act as the starting point when using
+                Docker. An image is comparable to a snapshot in virtual machine (VM) environments
             </p>
-
+        </div>
+        <div>
             <h3 id="section4-2"> What is a Docker Container ? </h3>
 
             <p>
                 Containers are an abstraction at the app layer that packages code and dependencies together.
-                <br> Multiple containers can run on the same machine and share the OS kernel
-                <br> with other containers, each running as isolated processes in user space.
-                <br> Containers take up less space than VMs (container images are typically
-                <br> tens of MBs in size),
-                <br> can handle more applications
-                <br> and require fewer VMs and Operating systems.
+                Multiple containers can run on the same machine and share the OS kernel
+                with other containers, each running as isolated processes in user space.
+                Containers take up less space than VMs (container images are typically
+                tens of MBs in size),
+                can handle more applications
+                and require fewer VMs and Operating systems.
             </p>
+        </div>
         </section>
         <section id="section5">
-            <h1> Dockerfile </h1>
+            <h2> Dockerfile </h2>
+            <div>
             <h3 id="section5-1">definition </h3>
             <p>
                 A Dockerfile is a text document that contains
-                <br> all the commands a user could call on the command line
-                <br> to assemble an image. This page describes
-                <br> the commands you can use in a Dockerfile.
+                all the commands a user could call on the command line
+                to assemble an image. This page describes
+                the commands you can use in a Dockerfile.
             </p>
+        </div>
+      
             <h3 id="section5-2">
                 basics command
             </h3>
@@ -320,261 +331,287 @@
             </table>
         </section>
         <section id="section6">
-            <h1>
+            <h2>
                 Docker command
-            </h1>
-            <h3> attach </h3>
-            <p>
-                Attach local standard input, output, and error streams to a running container
-            </p>
-            <h3> build </h3>
-            <p>
-                Build an image from a Dockerfile
-            </p>
-            <h3> builder </h3>
-            <p>
-                Manage builds
-            </p>
-            <h3> checkpoint </h3>
-            <p>
-                Manage checkpoints
-            </p>
-            <h3> commit </h3>
-            <p>
-                Create a new image from a container's changes
-            </p>
-            <h3> config </h3>
-            <p>
-                Manage Swarm configs
-            </p>
-            <h3> container </h3>
-            <p>
-                Manage containers
-            </p>
-            <h3> context </h3>
-            <p>
-                Manage contexts
-            </p>
-            <h3> cp </h3>
-            <p>
-                Copy files/folders between a container and the local filesystem
-            </p>
-            <h3> create </h3>
-            <p>
-                Create a new container
-            </p>
-            <h3> diff </h3>
-            <p>
-                Inspect changes to files or directories on a container's filesystem
-            </p>
-            <h3> events </h3>
-            <p>
-                Get real time events from the server
-            </p>
-            <h3> exec </h3>
-            <p>
-                Execute a command in a running container
-            </p>
-            <h3> export </h3>
-            <p>
-                Export a container's filesystem as a tar archive
-            </p>
-            <h3> history </h3>
-            <p>
-                Show the history of an image
-            </p>
-            <h3> image </h3>
-            <p>
-                Manage images
-            </p>
-            <h3> images </h3>
-            <p>
-                List images
-            </p>
-            <h3> import </h3>
-            <p>
-                Import the contents from a tarball to create a filesystem image
-            </p>
-            <h3> info </h3>
-            <p>
-                Display system-wide information
-            </p>
-            <h3> inspect </h3>
-            <p>
-                Return low-level information on Docker objects
-            </p>
-            <h3> kill </h3>
-            <p>
-                Kill one or more running containers
-            </p>
-            <h3> load </h3>
-            <p>
-                Load an image from a tar archive or STDIN
-            </p>
-            <h3> login </h3>
-            <p>
-                Log in to a registry
-            </p>
-            <h3> logout </h3>
-            <p>
-                Log out from a registry
-            </p>
-            <h3> logs </h3>
-            <p>
-                Fetch the logs of a container
-            </p>
-            <h3> manifest </h3>
-            <p>
-                Manage Docker image manifests and manifest lists
-            </p>
-            <h3> network </h3>
-            <p>
-                Manage networks
-            </p>
-            <h3> node </h3>
-            <p>
-                Manage Swarm nodes
-            </p>
-            <h3> pause </h3>
-            <p>
-                Pause all processes within one or more containers
-            </p>
-            <h3> plugin </h3>
-            <p>
-                Manage plugins
-            </p>
-            <h3> port </h3>
-            <p>
-                List port mappings or a specific mapping for the container
-            </p>
-            <h3> ps </h3>
-            <p>
-                List containers
-            </p>
-            <h3> pull </h3>
-            <p>
-                Download an image from a registry
-            </p>
-            <h3> push </h3>
-            <p>
-                Upload an image to a registry
-            </p>
-            <h3> rename </h3>
-            <p>
-                Rename a container
-            </p>
-            <h3> restart </h3>
-            <p>
-                Restart one or more containers
-            </p>
-            <h3> rm </h3>
-            <p>
-                Remove one or more containers
-            </p>
-            <h3> rmi </h3>
-            <p>
-                Remove one or more images
-            </p>
-            <h3> run </h3>
-            <p>
-                Create and run a new container from an image
-            </p>
-            <h3> save </h3>
-            <p>
-                Save one or more images to a tar archive (streamed to STDOUT by default)
-            </p>
-            <h3> search </h3>
-            <p>
-                Search Docker Hub for images
-            </p>
-            <h3> secret </h3>
-            <p>
-                Manage Swarm secrets
-            </p>
-            <h3> service </h3>
-            <p>
-                Manage Swarm services
-            </p>
-            <h3> stack </h3>
-            <p>
-                Manage Swarm stacks
-            </p>
-            <h3> start </h3>
-            <p>
-                Start one or more stopped containers
-            </p>
-            <h3> stats </h3>
-            <p>
-                Display a live stream of container(s) resource usage statistics
-            </p>
-            <h3> stop </h3>
-            <p>
-                Stop one or more running containers
-            </p>
-            <h3> swarm </h3>
-            <p>
-                Manage Swarm
-            </p>
-            <h3> system </h3>
-            <p>
-                Manage Docker
-            </p>
-            <h3> tag </h3>
-            <p>
-                Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
-            </p>
-            <h3> top </h3>
-            <p>
-                Display the running processes of a container
-            </p>
-            <h3> trust </h3>
-            <p>
-                Manage trust on Docker images
-            </p>
-            <h3> unpause </h3>
-            <p>
-                Unpause all processes within one or more containers
-            </p>
-            <h3> update </h3>
-            <p>
-                Update configuration of one or more containers
-            </p>
-            <h3> version </h3>
-            <p>
-                Show the Docker version information
-            </p>
-            <h3> volume </h3>
-            <p>
-                Manage volumes
-            </p>
-            <h3> wait </h3>
-            <p>
-                Block until one or more containers stop, then print their exit codes
-            </p>
+            </h2>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Docker Commands</title>
+            </head>
+            <body>
+            
+            <table border="1">
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>attach</td>
+                    <td>Attach local standard input, output, and error streams to a running container</td>
+                </tr>
+                <tr>
+                    <td>build</td>
+                    <td>Build an image from a Dockerfile</td>
+                </tr>
+                <tr>
+                    <td>builder</td>
+                    <td>Manage builds</td>
+                </tr>
+                <tr>
+                    <td>checkpoint</td>
+                    <td>Manage checkpoints</td>
+                </tr>
+                <tr>
+                    <td>commit</td>
+                    <td>Create a new image from a container's changes</td>
+                </tr>
+                <tr>
+                    <td>config</td>
+                    <td>Manage Swarm configs</td>
+                </tr>
+                <tr>
+                    <td>container</td>
+                    <td>Manage containers</td>
+                </tr>
+                <tr>
+                    <td>context</td>
+                    <td>Manage contexts</td>
+                </tr>
+                <tr>
+                    <td>cp</td>
+                    <td>Copy files/folders between a container and the local filesystem</td>
+                </tr>
+                <tr>
+                    <td>create</td>
+                    <td>Create a new container</td>
+                </tr>
+                <tr>
+                    <td>diff</td>
+                    <td>Inspect changes to files or directories on a container's filesystem</td>
+                </tr>
+                <tr>
+                    <td>events</td>
+                    <td>Get real-time events from the server</td>
+                </tr>
+                <tr>
+                    <td>exec</td>
+                    <td>Execute a command in a running container</td>
+                </tr>
+                <tr>
+                    <td>export</td>
+                    <td>Export a container's filesystem as a tar archive</td>
+                </tr>
+                <tr>
+                    <td>history</td>
+                    <td>Show the history of an image</td>
+                </tr>
+                <tr>
+                    <td>image</td>
+                    <td>Manage images</td>
+                </tr>
+                <tr>
+                    <td>images</td>
+                    <td>List images</td>
+                </tr>
+                <tr>
+                    <td>import</td>
+                    <td>Import the contents from a tarball to create a filesystem image</td>
+                </tr>
+                <tr>
+                    <td>info</td>
+                    <td>Display system-wide information</td>
+                </tr>
+                <tr>
+                    <td>inspect</td>
+                    <td>Return low-level information on Docker objects</td>
+                </tr>
+                <tr>
+                    <td>kill</td>
+                    <td>Kill one or more running containers</td>
+                </tr>
+                <tr>
+                    <td>load</td>
+                    <td>Load an image from a tar archive or STDIN</td>
+                </tr>
+                <tr>
+                    <td>login</td>
+                    <td>Log in to a registry</td>
+                </tr>
+                <tr>
+                    <td>logout</td>
+                    <td>Log out from a registry</td>
+                </tr>
+                <tr>
+                    <td>logs</td>
+                    <td>Fetch the logs of a container</td>
+                </tr>
+                <tr>
+                    <td>manifest</td>
+                    <td>Manage Docker image manifests and manifest lists</td>
+                </tr>
+                <tr>
+                    <td>network</td>
+                    <td>Manage networks</td>
+                </tr>
+                <tr>
+                    <td>node</td>
+                    <td>Manage Swarm nodes</td>
+                </tr>
+                <tr>
+                    <td>pause</td>
+                    <td>Pause all processes within one or more containers</td>
+                </tr>
+                <tr>
+                    <td>plugin</td>
+                    <td>Manage plugins</td>
+                </tr>
+                <tr>
+                    <td>port</td>
+                    <td>List port mappings or a specific mapping for the container</td>
+                </tr>
+                <tr>
+                    <td>ps</td>
+                    <td>List containers</td>
+                </tr>
+                <tr>
+                    <td>pull</td>
+                    <td>Download an image from a registry</td>
+                </tr>
+                <tr>
+                    <td>push</td>
+                    <td>Upload an image to a registry</td>
+                </tr>
+                <tr>
+                    <td>rename</td>
+                    <td>Rename a container</td>
+                </tr>
+                <tr>
+                    <td>restart</td>
+                    <td>Restart one or more containers</td>
+                </tr>
+                <tr>
+                    <td>rm</td>
+                    <td>Remove one or more containers</td>
+                </tr>
+                <tr>
+                    <td>rmi</td>
+                    <td>Remove one or more images</td>
+                </tr>
+                <tr>
+                    <td>run</td>
+                    <td>Create and run a new container from an image</td>
+                </tr>
+                <tr>
+                    <td>save</td>
+                    <td>Save one or more images to a tar archive (streamed to STDOUT by default)</td>
+                </tr>
+                <tr>
+                    <td>search</td>
+                    <td>Search Docker Hub for images</td>
+                </tr>
+                <tr>
+                    <td>secret</td>
+                    <td>Manage Swarm secrets</td>
+                </tr>
+                <tr>
+                    <td>service</td>
+                    <td>Manage Swarm services</td>
+                </tr>
+                <tr>
+                    <td>stack</td>
+                    <td>Manage Swarm stacks</td>
+                </tr>
+                <tr>
+                    <td>start</td>
+                    <td>Start one or more stopped containers</td>
+                </tr>
+                <tr>
+                    <td>stats</td>
+                    <td>Display a live stream of container(s) resource usage statistics</td>
+                </tr>
+                <tr>
+                    <td>stop</td>
+                    <td>Stop one or more running containers</td>
+                </tr>
+                <tr>
+                    <td>swarm</td>
+                    <td>Manage Swarm</td>
+                </tr>
+                <tr>
+                    <td>system</td>
+                    <td>Manage Docker</td>
+                </tr>
+                <tr>
+                    <td>tag</td>
+                    <td>Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE</td>
+                </tr>
+                <tr>
+                    <td>top</td>
+                    <td>Display the running processes of a container</td>
+                </tr>
+                <tr>
+                    <td>trust</td>
+                    <td>Manage trust on Docker images</td>
+                </tr>
+                <tr>
+                    <td>unpause</td>
+                    <td>Unpause all processes within one or more containers</td>
+                </tr>
+                <tr>
+                    <td>update</td>
+                    <td>Update configuration of one or more containers</td>
+                </tr>
+                <tr>
+                    <td>version</td>
+                    <td>Show the Docker version information</td>
+                </tr>
+                <tr>
+                    <td>volume</td>
+                    <td>Manage volumes</td>
+                </tr>
+                <tr>
+                    <td>wait</td>
+                    <td>Block until one or more containers stop, then print their exit codes</td>
+                </tr>
+            </table>
+            
+            </body>
+            </html>
+            
 
         </section>
  
     <section id="section7">
-        <h1> Docker Networking </h1>
+        <h2> Docker Networking </h2>
+        <div>
         <h3 id="section7-1">What is Docker Networking? </h3>
         <p>
             For Docker containers to communicate with each
-            <br> other and the outside world via the host
-            <br> machine, there has to be a layer of4
-            <br> networking involved. Docker supports different
-            <br> types of networks, each fit for certain use cases
+             other and the outside world via the host
+             machine, there has to be a layer of4
+             networking involved. Docker supports different
+             types of networks, each fit for certain use cases
         </p>
+    </div>
+    <div>
         <h3 id="section7-2"> Docker Default Networking (docker0) </h3>
         <p>
             When Docker is installed, a default bridge network named
-            <br> docker0 is created. Each new Docker container is automatically
-            <br> attached to this network, unless a custom network is specified.
-            <br> Besides docker0 , two other networks get created automatically
-            <br> by Docker: host (no isolation between host and containers
-            <br> on this network, to the outside world they are
-            <br> on the same network) and none (attached containers run on
-            <br> container-specific network stack).
+           <b> docker0 </b>  is created. Each new Docker container is automatically
+             attached to this network, unless a custom network is specified.
+             Besides docker0 , two other networks get created automatically
+             by Docker: host (no isolation between host and containers
+             on this network, to the outside world they are
+             on the same network) and none (attached containers run on
+             container-specific network stack).
         </p>
+    </div>
+    <div>
+
+
         <h3 id="section7-3"> Docker Network Types </h3>
         <table>
             <thead>
@@ -610,38 +647,45 @@
                 </tr>
             </tbody>
         </table>
+    </div>
 
     </section>
     <section id="section8">
-        <h1> Docker Volume </h1>
+        
         <figure>
-            <figure>
+            <figcaption>
+                <div>
+
+                
+                <h2> Docker Volume </h2>
+            
                 <p>
                     Volumes are the preferred mechanism for persisting data generated
-                    <br> by and used by Docker containers. While bind mounts are dependent
-                    <br> on the directory structure and OS of the host machine, volumes
-                    <br> are completely managed by Docker. Volumes have several advantages
-                    <br> over bind mounts:Volumes are easier to
-                    <br> back up or migrate than bind mounts.
-                    <br> You can manage volumes using Docker CLI commands or the Docker API.
-                    <br> Volumes work on both Linux and Windows containers.
-                    <br> Volumes can be more safely shared among multiple containers.
-                    <br> Volume drivers let you store volumes on remote hosts or cloud
-                    <br> providers, encrypt the contents of volumes, or add other functionality.
-                    <br> New volumes can have their content pre-populated by a container.
-                    <br> Volumes on Docker Desktop have much higher performance than bind mounts
-                    <br> from Mac and Windows hosts.
+                     by and used by Docker containers. While bind mounts are dependent
+                     on the directory structure and OS of the host machine, volumes
+                     are completely managed by Docker. Volumes have several advantages
+                     over bind mounts:Volumes are easier to
+                     back up or migrate than bind mounts.
+                     You can manage volumes using Docker CLI commands or the Docker API.
+                     Volumes work on both Linux and Windows containers.
+                     Volumes can be more safely shared among multiple containers.
+                     Volume drivers let you store volumes on remote hosts or cloud
+                     providers, encrypt the contents of volumes, or add other functionality.
+                     New volumes can have their content pre-populated by a container.
+                     Volumes on Docker Desktop have much higher performance than bind mounts
+                     from Mac and Windows hosts.
                 </p>
-            </figure>
+            </div>
+            </figcaption>
             <img src="./src/types-of-mounts-volume.webp" alt="docker volumes">
         </figure>
     </section>
     <section id="section9">
-        <h1> Examples</h1>
+        <h2> Examples</h2>
         <h3>Static Web Site (nginx Container)</h3>
         <p>
             Below is an example Dockerfile that you can use to create a Docker image 
-           <br>  for serving a static website using Nginx on a Debian base 
+            for serving a static website using Nginx on a Debian base 
         </p>
         <div class="code">
         <p class="code-title">Dockerfile</p>
