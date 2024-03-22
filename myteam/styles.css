@@ -1,0 +1,128 @@
+.box-area 
+{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    width: 100vw;
+background: red;
+
+
+}
+
+.single-box
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    /* min-width: 200px; */
+    height: auto;
+    border-radius: 4px;
+    background-color: #fff;
+
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .6s;
+
+    box-shadow: 1px 0 5px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+.img-area
+{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border: 6px solid #ddd;
+
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 20px;
+    -webkit-background-size:cover ;
+    background-size: cover;
+    background-position: center center;
+
+
+
+}
+
+.single-box:nth-child(1) .img-area
+{
+
+    background-image: url(https://cdn.intra.42.fr/users/3994479ec2d58abb64e7d412fac32459/ebennamr.jpg);
+}
+.single-box:nth-child(2) .img-area
+{
+
+    background-image: url(https://cdn.intra.42.fr/users/d07b0fed55adee48f7ada7e4bd27543f/mel-aini.jpg);
+}
+.single-box:nth-child(3) .img-area
+{
+
+    background-image: url(https://cdn.intra.42.fr/users/310f20caa8f2fff044bda72e14f997ea/ochouikh.jpg);
+}
+.single-box:nth-child(4) .img-area
+{
+
+    background-image: url(https://cdn.intra.42.fr/users/89ff7eec6bfd78978b2798ccd17e012e/yettabaa.jpg);
+}
+.single-box:nth-child(5) .img-area
+{
+
+    background-image: url(https://cdn.intra.42.fr/users/503bf35d1ad14078094cf2d147c6ae8b/sizgunan.jpg);
+}
+
+.header-text
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+} 
+
+.img-text
+{
+
+    font-family: poppins;
+    padding: 20px;
+}
+
+.line 
+{
+    height: 2px;
+    width: 45px;
+    background-color: #222;
+    margin: auto ;
+}
+
+.img-text  h3 
+{
+    margin: 10px 0;
+
+}
+
+.img-text p 
+{
+    font: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.single-box:hover   
+{
+    background-color: darkorange;
+}
+
+.single-box:hover  .line
+{
+    background-color: darkorange;
+    color: #fff;    
+}
