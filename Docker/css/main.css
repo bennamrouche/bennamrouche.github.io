@@ -1,82 +1,61 @@
-body 
-{
-    color  : #fffefe;
-    /* margin: 0px auto; */
-    padding: 5px 20px;
-    background-color: rgb(27, 0, 46);
-    
-}
 
-/*>>>>>>>>>>  header >>>>>>>>>>  */
-.sidebar h1 
+
+body {
+    background-color: lightblue;
+  }
+
+h1 
 {
     text-align: center;
-    font-size:   2.5em; ;
-    color  : #fffefe;
+    font-size:  3rem; ;
+    color  : #0b3749;
+}
+
+header 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 25%);
+    max-width: 1200px;
+    justify-content: center;   
+    margin: auto;
 }
 
 
 
 .menu 
 {
-    padding: 10px;
-    box-shadow: 5px 5px 5px rgb(105, 117, 247);
-    border-radius: 10px;
-    background-color: #28296f;
-    margin-bottom: 10px;
-    margin: 10px;
-    padding: 10px;
-    max-width: 700px;
-    width: 80%; 
-    
-}
-
-.menu >  div 
-{
-
-    padding: 5px;
-    border-radius: 7px;
-    margin-right:0px 10px ;
-    margin: 0px;
-    margin-bottom: 10px;
-
-}
-
-.sidebar
-{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    padding: 0px;
-     width: 100%;
-    overflow: auto;
-    text-align: center;
-    
+    margin: 4px;
+    margin-bottom: 10px;
+    color:  #FEFBF6;
+    background-color: #B67352;
+    border-radius: 10px;
+    border: solid #B67352 3px;  
 }
 
-.menu > a  , .menu  a 
+.menu:hover
 {
-    font-size: 1.5rem;
-    padding: 0px 0px;
-    margin-right: 20px;
+    color:  #B67352;
+    background-color: #FEFBF6 ;
+    border-radius: 10px;
+    border: solid #B67352 3px;  
+}
+
+.menu:hover a 
+{
+    color:  #B67352;
+}
+
+.menu  a 
+{
+    font-size: 1.7rem;
+    padding:  7px;
     text-transform: capitalize;
-    text-align: start;
+    text-align: center;
+    color:  #FEFBF6;
+    height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration:  none;
-    color:  #feffff;
-    font-size: 1em;
-    
-    
-}
-
-.menu > a:hover  , .menu  a:hover
-{
-  
-    text-shadow: 2px 2px rgb(106, 0, 255);
-    text-decoration: double;
-    text-decoration: double underline coral; 
-
+    text-decoration:  none;  
 }
 
 
@@ -97,27 +76,22 @@ section
 
  section  div 
 {
-    max-width: 500px;
+    /* max-width: 1000px; 
     margin-top: 100px;
     margin: 10px auto;
     border-radius: 10px;
-    padding: 10px;
-     background-color: #080037; 
+    padding: 10px; */
+     /* background-color: #ebeaf3;  */
      border:3px   rgb(137, 167, 255) groove ;
-     box-shadow: 2px 2px 3px blue, -2px -2px 3px blue;
-}
-
-
-h1 
-{
-    /* text-align: center; */
-    color : #0b3749 ;
+  
 }
 
 h3
 {
-    color : white;
+    color:  #B67352;
+    font-size: 2rem;
 }
+
 
 img
 {
@@ -129,6 +103,8 @@ img
     box-shadow: 4px 4px 7px  rgb(62, 0, 196) , -4px -4px 7px rgb(62, 0, 196);;
 } 
 
+
+
 /* >>>>>>>>>> table >>>>>>>>>>>>>>>>>>> */
 table 
 {
@@ -136,8 +112,6 @@ table
     background-color: brown;
     background-color: #080037; 
     max-width: 500px;
-  
-
 }
 
 table , th , td 
@@ -157,40 +131,19 @@ p
 }
 
 
-
-a 
-{
-        padding: 0px 0px;
-        margin: auto;
-        text-transform: capitalize;
-        text-align: start;
-        font-size: 14px;
-        text-decoration:  none;
-        color: #2a23fc;
-}
-
-
 #section6 > h3 
 {
     padding: 2px;
     margin: 0px;
     width: fit-content;
 }
+
 section
 {
     border-bottom: 3px red solid;
 }
 
-/* #section6 > p 
-{
-   margin: 3px;
-    text-indent: 2em;
-} */
 
-/* main:nth-child(even)
-{
-    background-color: red;
-} */
 /*************************            Code Component      ************************/
 
 .code 
@@ -204,8 +157,6 @@ section
     border-radius: 20px;
     padding: 20px;
     max-width: 500px;
-    
-
 }
 
 .keyword 
@@ -217,6 +168,7 @@ section
     margin-right: 15px;
 
 }
+
 .instruction > p
  {
     display: inline;
@@ -235,6 +187,7 @@ section
     font-size: 20px;
    width: 100%;
 }
+
 .normal 
 {
     
@@ -255,13 +208,11 @@ section
 .instruction
 {
    display: block;
-
-   /* background-color: #17ff3f; */
 }
 
 
 
-/*           footer                      */
+
 
  footer a img 
 {
@@ -301,3 +252,82 @@ svg:hover
     border-bottom: #1100ff dashed 2px;
     
 }
+
+.element-container 
+{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    /* display: grid; */
+   /* flex-wrap: wrap; */
+   /* justify-content: space-evenly; */
+   /* grid-template-columns: repeat(4,1fr);
+   align-items: center; */
+   justify-content: center;
+
+}
+/* 
+.element-container > div > p:nth-child(1)
+{
+    font-size: 2rem;
+}
+
+
+.element-container > div > p:nth-child(2)
+{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    flex
+
+}
+
+*/
+
+.element-container div
+{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+   height: 250px;
+   width: 250px;
+  
+} 
+
+.element-container  div  p
+{
+    font-size: 20px;
+  
+}
+
+.element-container  div  p:last-child
+{
+    font-size: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+
+@media only  screen and (max-width:1000px) {
+    header 
+    {
+        grid-template-columns: repeat(3, 1fr); 
+    }         
+}
+
+@media only screen and (max-width: 750px) {
+    header 
+    {
+        grid-template-columns: repeat(2, 1fr);   
+    } 
+}
+
+
+@media only screen and (max-width: 600px) {
+
+header 
+    {
+        grid-template-columns: repeat(1, 1fr); 
+    } 
+  }

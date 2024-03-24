@@ -1,3 +1,4 @@
+
 .box-area 
 {
     display: -webkit-box;
@@ -10,7 +11,6 @@
     align-items: center;
     margin-top: 70px;
     width: 100vw;
-background: red;
 
 
 }
@@ -26,7 +26,7 @@ background: red;
     /* min-width: 200px; */
     height: auto;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #ffe2d6;
 
     text-align: center;
     margin: 20px;
@@ -82,6 +82,7 @@ background: red;
     background-image: url(https://cdn.intra.42.fr/users/503bf35d1ad14078094cf2d147c6ae8b/sizgunan.jpg);
 }
 
+
 .header-text
 {
     font-size: 24px;
@@ -118,11 +119,11 @@ background: red;
 }
 .single-box:hover   
 {
-    background-color: darkorange;
+    background-color: #fff;
 }
 
 .single-box:hover  .line
 {
-    background-color: darkorange;
+    background-color: #ffe2d6;
     color: #fff;    
 }

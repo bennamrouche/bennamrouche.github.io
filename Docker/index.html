@@ -12,70 +12,81 @@
 
 </head>
 
+        <h1> Topics </h1>
     <header>
-        <nav class="sidebar">
-            <h1> Topics </h1>
-
-                <div class="menu">
+              <div class="menu">
                     <a href="#section1"> What is Docker ? </a>
                 </div>
 
                 <div class="menu">
                     <a href="#section2"> Docker vs Virtual Machine </a>
                 </div>
+
                 <div class="menu">
                     <a href="#section3"> Docker architecture </a>
-
                 </div>
+
                 <div class="menu">	
-						<a href="#section4"> Docker Image And Container </a>
-						<div>                   
-							<a href="#section4-1"> What is a Docker image? </a>
-							
-						<a href="#section4-2"> What is a Docker Container? </a>
-						</div>
+				    <a href="#section4"> Docker Image And Container </a>
                 </div>
 
-              
+				  <div class="menu">	               
+					    <a href="#section4-1"> What is a Docker image? </a>
+                 </div>
+
+               <div class="menu">	
+						<a href="#section4-2"> What is a Docker Container? </a>
+			</div>
 
                 <div class="menu">
                             <a href="#section5"> Dockerfile</a>
-							<div>
-								<a href="#section5-1"> What is a Dockerfile? </a>
+				</div>
+
+                <div class="menu">
+				    <a href="#section5-1"> What is a Dockerfile? </a>
+                </div>
+
+                <div class="menu">
 								<a href="#section5-2"> basics command</a>
-							</div>
-                  </div>
+				</div>
+              
 
                 <div class="menu">
                     <a href="#section6">Docker command </a>
                 </div>
+
                 <div class="menu">
                     <a href="#section7"> Docker Networking </a>
-					<div>
-						<a href="#section7-1"> What is Docker Networking? </a>
-						<a href="#section7-2"> Default network </a>
-						<a href="#section7-3"> Network Types </a>
-					</div>
-            </div>
+				</div>
 
-    
+                <div class="menu">
+						<a href="#section7-1"> What is Docker Networking? </a>
+                </div>
+
+                <div class="menu">
+						<a href="#section7-2"> Default network </a>
+                </div>
+
+                <div class="menu">
+						<a href="#section7-3"> Network Types </a>
+				</div>
                 <div class="menu">
                     <a href="#section8"> Docker Volumes </a>
 				</div>
 
                 <div class="menu">
-                    <a href="#section"> Examples</a>
-                        
-					<div>
-                            <a> Static Web Site (nginx)</A>
+                    <a href="#section"> Examples</a>  
 				</div>
-        </nav>
-    </header>
 
+                <div class="menu">
+                    <a> Static Web Site (nginx) </a>
+                </div>
+</header>
     <main>
         <section id="section1">
+
             <div>
-            <h2> What is Docker ? </h2>
+            <h3> What is Docker ? </h3>
             <p>
                 <b> Docker </b> is an open source platform
                that enables developers to build,<b> deploy</b>, <b> run </b> , <b> run </b> <b>update </b> and<b>
@@ -85,9 +96,10 @@
               libraries and dependencies required to run that code in any environment.
             </p>
         </div>
+
         </section>
         <section id="section2">
-            <h2>Docker vs Virtual Machine </h2>
+            <h3>Docker vs Virtual Machine </h3>
             <table>
                 <thead>
                     <tr>
@@ -187,9 +199,9 @@
             <figure>
                 <figcaption>
             <div>
-                <h2>
+                <h3>
                     Docker architecture
-                </h2>
+                </h3>
                     <p>
                         
     Docker uses a client-server architecture. 
@@ -249,86 +261,86 @@
             <h3 id="section5-2">
                 basics command
             </h3>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Instruction</td>
-                        <td> Description </td>
-                    </tr>
-                </thead>
-                <tbody>
 
-                    <tr>
-                        <td> ADD </td>
-                        <td> Add local or remote files and directories. </td>
-                    </tr>
-                    <tr>
-                        <td> ARG </td>
-                        <td> Use build-time variables. </td>
-                    </tr>
-                    <tr>
-                        <td> CMD </td>
-                        <td>Specify default commands. </td>
-                    </tr>
-                    <tr>
-                        <td>COPY
-                        </td>
-                        <td> Copy files and directories. </td>
-                    </tr>
-                    <tr>
-                        <td> ENTRYPOINT</td>
-                        <td> Specify default executable. </td>
-                    </tr>
-                    <tr>
-                        <td> ENV
-                        <td> Set environment variables. </td>
-                    </tr>
-                    <tr>
-                        <td> EXPOSE </td>
-                        <td>Describe which ports your application is listening on.</td>
-                    </tr>
-                    <tr>
-                        <td> FROM </td>
-                        <td> Create a new build stage from a base image. </td>
-                    </tr>
-                    <tr>
-                        <td> HEALTHCHECK </td>
-                        <td> Check a container's health on startup.</td>
-                    </tr>
-                    <tr>
-                        <td>LABEL </td>
-                        <td> Add metadata to an image. </td>
-                    </tr>
-                    <tr>
-                        <td> BUILD </td>
-                        <td> Specify instructions for when the image is used in a build. </td>
-                    </tr>
-                    <tr>
-                        <td>RUN </td>
-                        <td> Execute build commands. </td>
-                    </tr>
-                    <tr>
-                        <td> SHELL </td>
-                        <td> Set the default shell of an image. </td>
-                    </tr>
-                    <tr>
-                        <td> STOPSIGNAL </td>
-                        <td> Specify the system call signal for exiting a container. </td>
-                    </tr>
-                    <tr>
-                        <td> USER </td>
-                        <td>Set user and group ID. </td>
-                    </tr>
-                    <tr>
-                        <td> VOLUME </td>
-                        <td>Create volume mounts. </td>
-                    </tr>
-                    <tr>
-                        <td>WORKDIR </td>
-                        <td> Change working directory.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="element-container">
+                
+                <div>
+                    <p>Instruction</p>
+                    <p> Description </p>
+                </div>
+        
+
+                <div>
+                    <p> ADD </p>
+                    <p> Add local or remote files and directories. </p>
+                </div>
+                <div>
+                    <p> ARG </p>
+                    <p> Use build-time variables. </p>
+                </div>
+                <div>
+                    <p> CMD </p>
+                    <p>Specify default commands. </p>
+                </div>
+                <div>
+                    <p>COPY
+                    </p>
+                    <p> Copy files and directories. </p>
+                </div>
+                <div>
+                    <p> ENTRYPOINT</p>
+                    <p> Specify default executable. </p>
+                </div>
+                <div>
+                    <p> ENV
+                    <p> Set environment variables. </p>
+                </div>
+                <div>
+                    <p> EXPOSE </p>
+                    <p>Describe which ports your application is listening on.</p>
+                </div>
+                <div>
+                    <p> FROM </p>
+                    <p> Create a new build stage from a base image. </p>
+                </div>
+                <div>
+                    <p> HEALTHCHECK </p>
+                    <p> Check a container's health on startup.</p>
+                </div>
+                <div>
+                    <p>LABEL </p>
+                    <p> Add metadata to an image. </p>
+                </div>
+                <div>
+                    <p> BUILD </p>
+                    <p> Specify instructions for when the image is used in a build. </p>
+                </div>
+                <div>
+                    <p>RUN </p>
+                    <p> Execute build commands. </p>
+                </div>
+                <div>
+                    <p> SHELL </p>
+                    <p> Set the default shell of an image. </p>
+                </div>
+                <div>
+                    <p> STOPSIGNAL </p>
+                    <p> Specify the system call signal for exiting a container. </p>
+                </div>
+                <div>
+                    <p> USER </p>
+                    <p>Set user and group ID. </p>
+                </div>
+                <div>
+                    <p> VOLUME </p>
+                    <p>Create volume mounts. </p>
+                </div>
+                <div>
+                    <p>WORKDIR </p>
+                    <p> Change working directory.</p>
+                </div>
+            </div>
+
         </section>
         <section id="section6">
             <h2>
@@ -753,6 +765,7 @@
     </section>
     <hr>
 </main>
+
 <!-- end main part  -->
     <footer>
         <p dir="auto" align="center" style="padding: 0px;">
