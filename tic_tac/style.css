@@ -1,0 +1,85 @@
+
+:root {
+    --bg-color: #d6e8fa;
+    --bg-card: #ffe2d6;
+    --fg-color : #ffffff;
+    --card-border:  #EEE;
+  }
+  
+body 
+{
+    background-color: var(--bg-color);
+}
+
+* 
+{
+
+    padding:  0;
+    margin: 0;
+}
+
+
+.ceil
+{
+
+    width: 64px;
+    height:  64px;
+
+  
+    margin: 4px; 
+    background-color: var(--bg-card);
+    border: var(--bg-color) solid;
+    color: red;
+    text-align: center;
+    font-size: 3em;
+}
+
+.row 
+{
+
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.container
+{
+    align-content: center;
+    width: fit-content;
+    margin: auto;
+    background-color: #000;
+
+
+}
+
+.bar
+{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    width: 50%;
+    min-width: 300px;
+    margin: 10px auto ;
+    justify-content: space-evenly;
+    height: 32px;
+     background-color: var(--bg-card);
+     
+     border-radius: 20px;
+}
+
+
+.bar  span 
+{
+    width: 40px;
+    margin-left: 10px;
+   
+}
+
+
+.select-player
+{
+    border-bottom: solid 4px rgb(12, 238, 12);
+}
